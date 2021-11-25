@@ -1,0 +1,42 @@
+public class Counter
+{
+	private int value;
+	
+/** Costruisce un nuovo Contatore.
+ * Il contatore viene azzerato
+ */
+	public Counter() {
+		this.value=0;
+	}
+	
+/** Incrementa il contatore
+ */
+	public void increase() {
+		this.value++;
+	}
+	
+/** Riazzera il contatore
+ */
+	public void reset() {
+		this.value = 0;
+	}
+	
+/** Verifica se il contatore è zero.
+ * 
+ * @return <code>true</code> se il contatore vale zero, <code> false</code> altrimenti
+ */
+	public boolean isZero() {
+		if (this.value == 0)
+			return true;
+		else
+			return false;
+	}
+	
+/** Restituisce il valore del contatore.
+ *
+ * @return il valore del contatore
+ */
+	public int getValue() {
+		return this.value;
+	}
+}
